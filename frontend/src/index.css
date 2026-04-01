@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-main: #FAFAF9;
+  --background-surface: #FFFFFF;
+  --background-secondary: #F5F5F4;
+  --text-primary: #1C1917;
+  --text-secondary: #57534E;
+  --text-tertiary: #A8A29E;
+  --border-default: #E7E5E4;
+  --border-focus: #1C1917;
+  --brand-primary: #000000;
+  --brand-accent: #9A3412;
+  --brand-success: #15803D;
+  --brand-error: #B91C1C;
+  --brand-promo: #CA8A04;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-main);
+  color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+@layer base {
+  :root {
+    --background: 30 6% 98%;
+    --foreground: 20 14% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 9%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 6% 96%;
+    --secondary-foreground: 20 14% 9%;
+    --muted: 30 6% 96%;
+    --muted-foreground: 25 5% 45%;
+    --accent: 17 88% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 6% 90%;
+    --input: 30 6% 90%;
+    --ring: 0 0% 0%;
+    --radius: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.4s ease-out forwards;
+}
+
+/* Product card hover effect */
+.product-card-image {
+  transition: transform 0.7s ease-out;
+}
+
+.product-card:hover .product-card-image {
+  transform: scale(1.05);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-black text-white px-8 py-3 uppercase tracking-widest text-sm font-medium transition-colors hover:bg-stone-800;
+}
+
+.btn-secondary {
+  @apply bg-transparent border border-black text-black px-8 py-3 uppercase tracking-widest text-sm font-medium transition-colors hover:bg-stone-100;
+}
+
+/* Input styles */
+.input-minimal {
+  @apply border-b border-stone-300 bg-transparent focus:border-black focus:ring-0 focus:outline-none px-0 py-2 transition-colors w-full;
+}
+
+/* Badge styles */
+.badge-promo {
+  @apply bg-stone-100 text-stone-800 text-xs px-2 py-1 uppercase tracking-wider;
+}
+
+.badge-sale {
+  @apply bg-red-50 text-red-600 text-xs px-2 py-1 uppercase tracking-wider font-semibold;
+}
+
+/* Container */
+.container-main {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Section padding */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+/* Typography */
+.heading-1 {
+  @apply text-5xl md:text-6xl tracking-tighter leading-none font-medium;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.heading-2 {
+  @apply text-3xl md:text-4xl tracking-tight leading-tight font-medium;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.heading-3 {
+  @apply text-2xl md:text-3xl tracking-tight font-medium;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.overline {
+  @apply text-xs uppercase tracking-widest font-semibold text-stone-500;
+}
+
+/* Glassmorphism nav */
+.nav-glass {
+  @apply bg-white/90 backdrop-blur-md border-b border-stone-200;
+}
+
+/* Toast customization */
+[data-sonner-toaster] {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+}

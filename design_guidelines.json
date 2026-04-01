@@ -1,0 +1,159 @@
+{
+  "theme_and_archetype": {
+    "domain": "E-commerce (Fashion)",
+    "theme": "Light",
+    "archetype": "4/5 Hybrid (Swiss Brutalist Minimalist Luxury)",
+    "description": "A high-end, minimalist e-commerce design inspired by major fashion brands. It relies heavily on generous white space, high-contrast monochrome tones, delicate serif headings paired with clean sans-serif body text, and large editorial-style imagery."
+  },
+  "colors": {
+    "background": {
+      "main": "#FAFAF9",
+      "surface": "#FFFFFF",
+      "secondary": "#F5F5F4",
+      "overlay": "rgba(0, 0, 0, 0.4)"
+    },
+    "text": {
+      "primary": "#1C1917",
+      "secondary": "#57534E",
+      "tertiary": "#A8A29E",
+      "inverse": "#FFFFFF"
+    },
+    "border": {
+      "default": "#E7E5E4",
+      "focus": "#1C1917",
+      "divider": "#D6D3D1"
+    },
+    "brand": {
+      "primary": "#000000",
+      "primary_hover": "#292524",
+      "accent": "#9A3412",
+      "success": "#15803D",
+      "error": "#B91C1C",
+      "promo": "#CA8A04"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "heading": "Cormorant Garamond, serif",
+      "body": "Work Sans, sans-serif"
+    },
+    "sizes": {
+      "h1": "text-5xl md:text-6xl tracking-tighter leading-none",
+      "h2": "text-3xl md:text-4xl tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl tracking-tight",
+      "h4": "text-xl md:text-2xl",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-stone-500",
+      "overline": "text-xs uppercase tracking-widest font-semibold text-stone-500"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-16 md:py-24",
+    "grid_gap": "gap-6 md:gap-10",
+    "card_padding": "p-6 md:p-8",
+    "radius": {
+      "none": "rounded-none",
+      "sm": "rounded-sm",
+      "md": "rounded-md",
+      "lg": "rounded-lg"
+    },
+    "rules": [
+      "Use sharp edges (rounded-none) for most product images and containers to maintain a high-fashion look.",
+      "Buttons should be sharp or slightly rounded (rounded-sm) with solid black background.",
+      "Hero sections should be full-bleed or use a split 50/50 layout.",
+      "Product lists should be cardless with borderless images and text aligned left underneath.",
+      "Use generous padding between sections to let the content breathe."
+    ]
+  },
+  "components": {
+    "navigation": {
+      "style": "Glassmorphism on scroll or solid white background with bottom border. High contrast links.",
+      "elements": "Logo left, Links center, Icons (Search, User, Heart, Cart) right."
+    },
+    "hero_banner": {
+      "style": "Full viewport height or 80vh. High quality image, minimal text overlay, distinct primary CTA button. Overlay should be subtle."
+    },
+    "product_card": {
+      "style": "Borderless image container. Image fills width. Below image: Title, Price, small color swatches. No visible card background.",
+      "interaction": "Image zoom on hover using group-hover scale transform."
+    },
+    "buttons": {
+      "primary": "bg-black text-white px-8 py-3 hover:bg-stone-800 transition-colors uppercase tracking-widest text-sm",
+      "secondary": "bg-transparent border border-black text-black px-8 py-3 hover:bg-stone-100 transition-colors uppercase tracking-widest text-sm",
+      "ghost": "text-stone-600 hover:text-black transition-colors"
+    },
+    "badges": {
+      "promo": "bg-stone-100 text-stone-800 text-xs px-2 py-1 uppercase tracking-wider",
+      "sale": "bg-red-50 text-red-600 text-xs px-2 py-1 uppercase tracking-wider font-semibold"
+    },
+    "inputs": {
+      "style": "Minimalist. border-b border-stone-300 rounded-none bg-transparent focus:border-black focus:ring-0 px-0 py-2 transition-colors."
+    }
+  },
+  "motion": {
+    "hover": "transition-all duration-300 ease-in-out",
+    "image_zoom": "group-hover:scale-105 transition-transform duration-700 ease-out",
+    "fade_in": "animate-in fade-in slide-in-from-bottom-4 duration-1000"
+  },
+  "icons_library": "lucide-react",
+  "media": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1772714601004-23b94ae3913d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwZmFzaGlvbiUyMG1vZGVsJTIwYmVpZ2UlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3NDk5MzY2N3ww&ixlib=rb-4.1.0&q=85",
+        "category": "Hero Background",
+        "description": "Woman in beige suit sitting on a white chair, perfect for minimalist fashion hero."
+      }
+    ],
+    "categories": [
+      {
+        "url": "https://images.pexels.com/photos/20837265/pexels-photo-20837265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "Women Collection",
+        "description": "Stylish fashion portrait in black and white."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1769072058710-66381e166f12?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwyfHxtZW4lMjBmYXNoaW9uJTIwbWluaW1hbGlzdCUyMG91dGZpdHxlbnwwfHx8fDE3NzQ5OTM2Njl8MA&ixlib=rb-4.1.0&q=85",
+        "category": "Men Collection",
+        "description": "Man with beard wearing white henley shirt and black pants."
+      },
+      {
+        "url": "https://images.pexels.com/photos/30562024/pexels-photo-30562024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "Accessories",
+        "description": "Chic beige handbag featuring floral elements."
+      }
+    ],
+    "products": [
+      {
+        "url": "https://images.unsplash.com/photo-1762605135332-8a7ce1403187?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwd29tZW4lMjBkcmVzcyUyMG1pbmltYWxpc3QlMjBwaG90b2dyYXBoeXxlbnwwfHx8fDE3NzQ5OTM2Njh8MA&ixlib=rb-4.1.0&q=85",
+        "category": "Product - Women Dress",
+        "description": "Woman in black dress."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1763750581767-b367bcd6c117?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHw0fHxtZW4lMjBmYXNoaW9uJTIwbWluaW1hbGlzdCUyMG91dGZpdHxlbnwwfHx8fDE3NzQ5OTM2Njl8MA&ixlib=rb-4.1.0&q=85",
+        "category": "Product - Men Casual",
+        "description": "Man in black t-shirt and shorts with sunglasses."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1564347654812-bcc3f3bca7ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZmFzaGlvbiUyMGFjY2Vzc29yaWVzJTIwYmFnJTIwc3VuZ2xhc3Nlc3xlbnwwfHx8fDE3NzQ5OTM2NzB8MA&ixlib=rb-4.1.0&q=85",
+        "category": "Product - Sunglasses",
+        "description": "Black framed sunglasses."
+      },
+      {
+        "url": "https://images.pexels.com/photos/7203482/pexels-photo-7203482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "Product - Sneakers",
+        "description": "Close-up of pink pants and white sneakers in a studio setting."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette. Use pure black background for main CTA buttons.",
+    "Use 'Cormorant Garamond' for headings and 'Work Sans' for body text. Ensure these fonts are loaded via Google Fonts in index.html.",
+    "Do NOT use placeholder text or dummy image URLs. Only use the images provided in the media section.",
+    "Build the hero section with a large image and minimal, elegant typography overlaid on it, use dark/light text appropriately based on the image.",
+    "Ensure the navigation is always visible, either sticky or fixed, to allow easy access to cart and search.",
+    "Add 'data-testid' to all interactive elements for robust testing.",
+    "Implement Shadcn UI for dropdowns, modals, tabs, and forms, but strip excessive borders and rounding to match the minimalist luxury theme.",
+    "For the cart and payment pages, maintain a clean, distraction-free layout to optimize conversions.",
+    "Use Lucide React for icons. Keep icon stroke-width thin (e.g., 1.5) for elegance."
+  ]
+}
